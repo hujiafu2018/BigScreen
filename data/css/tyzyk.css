@@ -1,0 +1,526 @@
+.main{
+    background: url("../img/main-bac.jpg") no-repeat 100%;
+}
+.cont-left {
+    height: 855px;
+    border: 1px solid #4574D6;
+}
+.cont-title-l{
+    position: absolute;
+    top: -35px;
+    left: 151.5px;
+    width: 214px;
+    height: 51px;
+    background: url("../img/tyzyk-sjly.png") no-repeat 100%;
+}
+.l-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    margin: 57px 0 43px 0;
+}
+.l-top-item-1{
+    display: none !important;
+    width: 135px;
+}
+.l-top-item-2{
+    width: 180px;
+}
+.l-top-item-3{
+    width: 220px;
+}
+.l-top .l-top-item{
+    display: flex;
+    flex-direction: column;
+    /*width: 154px;*/
+    height: auto;
+}
+.l-top-item .l-item-t{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 107px;
+    background: url("../img/tyzyk-m-item.png") no-repeat 100%;
+    background-size: 100% 100%;
+}
+.l-item-t-1, .l-item-t-2 {
+    width: 100%;
+    height: 53.5px;
+    line-height: 53.5px;
+}
+.l-top-item .l-item-t .l-item-t-1{
+    color: #00FCF9;
+    font-size: 25px;
+    font-weight: bold;
+}
+.l-top-item .l-item-t .l-item-t-2{
+    color: #fff;
+    font-size: 20px;
+}
+.l-bottom{
+    width: 100%;
+    height: auto;
+}
+.l-bottom .l-b-title{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding: 0 0 10px 0;
+}
+.l-bottom .l-b-title span{
+    display: inline-block;
+    color: #ff974f;
+    font-size: 18px;
+    text-align: center;
+}
+.l-bottom .l-b-title .l-b-t-l{
+    flex: 6;
+}
+.l-bottom .l-b-title .l-b-t-2, .l-bottom .l-b-title .l-b-t-3{
+    flex: 2;
+}
+.l-b-cont{
+    width: 100%;
+    height: 614px;
+    overflow: auto;
+}
+.l-b-cont::-webkit-scrollbar {display:none}
+.l-b-cont .l-bottom-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: calc(100%);
+    height: 65px;
+    margin-bottom: 9px;
+    font-size: 16px;
+    background: rgba(3, 94, 255, 0.1);
+    border: 1px solid #0a43bc;
+    border-left: none;
+    border-right: none;
+}
+.l-b-cont .l-bottom-item div{
+    text-align: center;
+}
+.l-b-cont .l-bottom-item .l-b-c-l{
+    flex: 6;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.l-b-cont .l-bottom-item .l-b-c-2, .l-b-cont .l-bottom-item .l-b-c-3{
+    flex: 2;
+    color: #00FCF9;
+}
+.cont-middle-top{
+    position: relative;
+    width: 720px;
+    height: 284px;
+    border: 1px solid #4574D6;
+}
+.cont-title-m-t{
+    position: absolute;
+    top: -35px;
+    left: 216px;
+    width: 288px;
+    height: 51px;
+    background: url("../img/tyzyk-jrph.png") no-repeat 100%;
+}
+#echart-m-t {
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+}
+.m-top{
+    width: 100%;
+    height: auto;
+}
+.m-top .m-t-title{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 0 10px 0;
+    margin-top: 47px;
+}
+.m-top span{
+    flex: 1;
+    color: #ff974f;
+    font-size: 18px;
+    text-align: center;
+}
+.m-t-cont{
+    width: 100%;
+    height: 203px;
+    overflow: auto;
+}
+.m-t-cont::-webkit-scrollbar {display:none}
+.m-t-cont .m-t-item{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    height: 55px;
+    margin-bottom: 9px;
+    font-size: 16px;
+    background: rgba(3, 94, 255, 0.1);
+    border: 1px solid #0a43bc;
+    border-left: none;
+    border-right: none;
+}
+.m-t-cont .m-t-item div{
+    flex: 1;
+    text-align: center;
+    color: #fff;
+}
+.m-t-cont .m-t-item .m-t-c-2, .m-t-cont .m-t-item .m-t-c-3{
+    color: #00FCF9;
+}
+.cont-middle-bottom{
+    position: relative;
+    width: 688px;
+    height: 385px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.cont-middle-bottom img{
+    position: absolute;
+    left: 20%;
+    width: 60%;
+    height: auto;
+}
+.cont-middle-bottom .text-item{
+    position: absolute;
+    display: inline-block;
+    width: auto;
+    color: #01edfb;
+    font-size: 22px;
+    font-weight: bold;
+    background-size: 100% 100% !important;
+}
+.cont-middle-bottom div {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cont-middle-bottom div span:nth-child(1) {
+    font-size: 18px;
+}
+.cont-middle-bottom div span:nth-child(2) {
+    font-size: 24px;
+}
+/*#text-1 {
+    height: 70px;
+    left: 275px;
+    bottom: 144px;
+    background: url(../img/img-2-bac.png);
+}
+#text-1 div {
+    width: auto;
+    min-width: 100%;
+    height: 100%;
+}*/
+#text-7 {
+    display: block;
+    color: #01edfb;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    width: 100%;
+    top: 48%;
+}
+#text-1, #text-2, #text-3{
+    height: 114px;
+}
+#text-1 div, #text-2 div, #text-3 div {
+    width: auto;
+    min-width: 160px;
+    /*padding-left: 30px;*/
+    height: 70px;
+    margin-left: 48px;
+    font-size: 26px;
+    text-align: center;
+}
+#text-1{
+    left: 446px;
+    top: -20px;
+    padding-right: 5px;
+    background: url(../img/img-1-bac.png);
+}
+#text-2 {
+    left: 493px;
+    top: 125px;
+    background: url(../img/img-2-bac.png);
+}
+#text-3 {
+    left: 457px;
+    bottom: 15px;
+    height: 85px;
+    padding-left: 20px;
+    background: url(../img/img-3-bac.png);
+}
+#text-4, #text-5, #text-6 {
+    height: 105px;
+}
+#text-4 {
+    right: 470px;
+    top: 15px;
+    background: url(../img/img-4-bac.png);
+}
+#text-5 {
+    right: 470px;
+    bottom: 140px;
+    height: 85px;
+    padding-right: 24px;
+    background: url(../img/img-5-bac.png);
+}
+#text-6 {
+    right: 434px;
+    bottom: 16px;
+    height: 85px;
+    padding-right: 30px;
+    background: url(../img/img-6-bac.png);
+}
+#text-4 div, #text-5 div, #text-6 div {
+    width: auto;
+    min-width: 160px;
+    padding-right: 30px;
+    height: 70px;
+    font-size: 26px;
+    text-align: center;
+}
+.display {
+    display: inline-flex !important;
+}
+.rotate-1 {
+    animation: rotate1 1.5s 0s alternate forwards;
+}
+.rotate-2 {
+    animation: rotate2 1.5s 0s alternate forwards ;
+}
+.rotate-3 {
+    animation: rotate3 1.5s 0s alternate forwards;
+}
+.rotate-4 {
+    animation: rotate4 1.5s 0s alternate forwards;
+}
+.rotate-1-1 {
+    animation: rotate1_1 1.5s 0s alternate forwards;
+}
+.rotate-2-1 {
+    animation: rotate2_1 1.5s 0s alternate forwards ;
+}
+.rotate-3-1 {
+    animation: rotate3_1 1.5s 0s alternate forwards;
+}
+.rotate-4-1 {
+    animation: rotate4_1 1.5s 0s alternate forwards;
+}
+@keyframes rotate1 {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+@keyframes rotate2 {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes rotate3 {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(-420deg);
+    }
+}
+@keyframes rotate4 {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
+@keyframes rotate1_1 {
+    0%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+@keyframes rotate2_1 {
+    0%{
+        transform: rotate(-360deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+@keyframes rotate3_1 {
+    0%{
+        transform: rotate(-420deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+@keyframes rotate4_1 {
+    0%{
+        transform: rotate(-90deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+/*.m-b-item{
+    position: relative;
+    width: 114px;
+    height: 97px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background: url("../img/tyzyk-m-b-item.png") no-repeat 100%;
+    background-size: contain;
+}
+.m-b-item span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 70px;
+    margin: auto auto;
+    text-align: center;
+}
+.cont-middle-bottom .item-1{
+    position: absolute;
+    top: 0;
+    left: -10px;
+}
+.cont-middle-bottom .item-2{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+.cont-middle-bottom .item-3{
+    position: absolute;
+    top: 300px;
+    left: 250px;
+}
+.cont-middle-bottom .item-4{
+    position: absolute;
+    top: 320px;
+    left: 450px;
+}
+.cont-middle-bottom .item-5{
+    position: absolute;
+    top: 200px;
+    left: 600px;
+}
+.cont-middle-bottom .item-6{
+    position: absolute;
+    top: 150px;
+    left: 450px;
+}
+.cont-middle-bottom .item-7{
+    position: absolute;
+    top: 0;
+    left: 380px;
+}
+.cont-middle-bottom .item-8{
+    position: absolute;
+    top: -50px;
+    left: 200px;
+}
+.cont-middle-bottom .item-9{
+    position: absolute;
+    top: 50px;
+    left: 540px;
+}
+.cont-middle-bottom .item-10{
+    position: absolute;
+    top: 80px;
+    left: 150px;
+}
+.item-6, .item-7, .item-8, .item-9, .item-10{
+    width: 91.2px;
+    height: 77.6px;
+}
+.item-6 span, .item-7 span, .item-8 span, .item-9 span, .item-10 span{
+    width: 40px;
+    height: 56px;
+}*/
+.cont-right {
+    height: 855px;
+    border: 1px solid #4574D6;
+}
+.cont-title-r{
+    position: absolute;
+    top: -35px;
+    left: 164.5px;
+    width: 188px;
+    height: 51px;
+    background: url("../img/tyzyk-zcztc.png") no-repeat 100%;
+}
+.cont-r{
+    width: calc(100% - 66px);
+    height: auto;
+    padding: 33px 0;
+    margin: 0 auto;
+}
+.cont-r:not(:last-child){
+    border-bottom: 1px solid #4574D6;
+}
+.c-r-t{
+    width: 100%;
+    font-size: 20px;
+    color: #ff974f;
+    text-align: left;
+    margin: 0 0 32px 0;
+}
+.c-r-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 20px);
+    height: auto;
+    margin: 0 auto;
+}
+.c-r-list div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+.c-r-list div img{
+    width: 88px;
+    height: 88px;
+}
+.c-r-list div .text-1{
+    margin: 13px 0 9px 0;
+}
+.c-r-list .zc .text-2{
+    color: #18b5f8;
+}
+.c-r-list .hxtk .text-2{
+    color: #3fb176;
+}
+.c-r-list .tjzs .text-2{
+    color: #0965e4;
+}

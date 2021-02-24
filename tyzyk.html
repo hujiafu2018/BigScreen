@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>统一工作台和大屏可视化-统一资源库</title>
+  <link rel="stylesheet" href="data/css/animate.min.css">
+  <link rel="stylesheet" href="data/css/common.css">
+  <link rel="stylesheet" href="data/css/rollSlide.css">
+  <link rel="stylesheet" href="data/css/tyzyk.css">
+</head>
+<body>
+<div class="main">
+  <!--  公共部分-->
+  <div class="common">
+    <div class="header">
+      重庆市政府网站集约化平台—数据监测云平台
+    </div>
+    <!--  天气-->
+    <div class="aside-weather">
+      <span id="time">00:00:00</span>|&nbsp;&nbsp;<span id="date">0000-00-00</span>
+      <span id="week">---</span>
+      <span id="wea">----</span>
+      <span id="tem">--°C</span>
+    </div>
+    <!--  用户信息-->
+    <!--<div class="aside-user">
+      <img src="data/img/main-user.png">
+      用户<span id="user">Mr.Hu</span>
+    </div>-->
+    <div class="nav">
+      <a href="index.html">工作首页</a>
+<!--      <a href="ptrz.html">平台入驻</a>-->
+      <a class="nav-active" href="tyzyk.html"><img src="data/img/common-tyzyk.png"></a>
+    </div>
+  </div>
+  <!--  内容-统一资源库 start-->
+  <div class="cont">
+    <!--    左边部分  start-->
+    <div class="cont-left">
+      <!--        边角 左-->
+      <div class="border-style-left"></div>
+      <!--        边角 右-->
+      <div class="border-style-right"></div>
+      <!--        标题-->
+      <div class="cont-title-l"></div>
+      <div class="l-top">
+        <div class="l-top-item l-top-item-1">
+          <!--<div class="l-item-t">
+            <div class="l-item-t-1" id="sourceNum">999</div>
+            <div class="l-item-t-2">数据源总量</div>
+          </div>-->
+        </div>
+        <div class="l-top-item l-top-item-2">
+          <div class="l-item-t">
+            <div class="l-item-t-1" id="dayNum">999</div>
+            <div class="l-item-t-2">今日采集量</div>
+          </div>
+        </div>
+        <div class="l-top-item l-top-item-3">
+          <div class="l-item-t">
+            <div class="l-item-t-1" id="totalNum">999</div>
+            <div class="l-item-t-2">总采集量</div>
+          </div>
+        </div>
+      </div>
+      <div class="l-bottom">
+        <div class="l-b-title">
+          <span class="l-b-t-l">数据源</span>
+          <span class="l-b-t-2">今日入库数</span>
+          <span class="l-b-t-3">总库入数</span>
+        </div>
+        <div class="l-b-cont roll-wrap roll_col" id="sjly">
+          <ul class="roll__list" style="position: absolute; left: 0; top: 0;">
+            <!--<li class="l-bottom-item">
+              <div class="l-b-c-l">重庆市科学技术局门户网站1</div>
+              <div class="l-b-c-2">99</div>
+              <div class="l-b-c-3">999</div>
+            </li>
+            <li class="l-bottom-item">
+              <div class="l-b-c-l">重庆市科学技术局门户网站2</div>
+              <div class="l-b-c-2">99</div>
+              <div class="l-b-c-3">999</div>
+            </li>
+            <li class="l-bottom-item">
+              <div class="l-b-c-l">重庆市科学技术局门户网站3</div>
+              <div class="l-b-c-2">99</div>
+              <div class="l-b-c-3">999</div>
+            </li>
+            <li class="l-bottom-item">
+              <div class="l-b-c-l">重庆市科学技术局门户网站4</div>
+              <div class="l-b-c-2">99</div>
+              <div class="l-b-c-3">999</div>
+            </li>
+            <li class="l-bottom-item">
+              <div class="l-b-c-l">重庆市科学技术局门户网站5</div>
+              <div class="l-b-c-2">99</div>
+              <div class="l-b-c-3">999</div>
+            </li>
+            <li class="l-bottom-item">
+              <div class="l-b-c-l">重庆市科学技术局门户网站6</div>
+              <div class="l-b-c-2">99</div>
+              <div class="l-b-c-3">999</div>
+            </li>
+            <li class="l-bottom-item">
+              <div class="l-b-c-l">重庆市科学技术局门户网站7</div>
+              <div class="l-b-c-2">99</div>
+              <div class="l-b-c-3">999</div>
+            </li>
+            <li class="l-bottom-item">
+              <div class="l-b-c-l">重庆市科学技术局门户网站8</div>
+              <div class="l-b-c-2">99</div>
+              <div class="l-b-c-3">999</div>
+            </li>
+            <li class="l-bottom-item">
+              <div class="l-b-c-l">重庆市科学技术局门户网站9</div>
+              <div class="l-b-c-2">99</div>
+              <div class="l-b-c-3">999</div>
+            </li>
+            <li class="l-bottom-item">
+              <div class="l-b-c-l">重庆市科学技术局门户网站10</div>
+              <div class="l-b-c-2">99</div>
+              <div class="l-b-c-3">999</div>
+            </li>
+            <li class="l-bottom-item">
+              <div class="l-b-c-l">重庆市科学技术局门户网站11</div>
+              <div class="l-b-c-2">99</div>
+              <div class="l-b-c-3">999</div>
+            </li>
+            <li class="l-bottom-item">
+              <div class="l-b-c-l">重庆市科学技术局门户网站12</div>
+              <div class="l-b-c-2">99</div>
+              <div class="l-b-c-3">999</div>
+            </li>-->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--    左边部分  end-->
+
+    <!--    中间部分  start-->
+    <div class="cont-middle">
+      <!--      中上部分-->
+      <div class="cont-middle-top">
+        <!--        边角 左-->
+        <div class="border-style-left"></div>
+        <!--        边角 右-->
+        <div class="border-style-right"></div>
+        <!--        标题-->
+        <div class="cont-title-m-t"></div>
+        <div id="echart-m-t"></div>
+    </div>
+    <!--      中下部分-->
+    <div class="cont-middle-bottom" id="hxztk">
+      <img class="img-1" src="data/img/img-1.png">
+      <img class="img-2" src="data/img/img-2.png">
+      <img class="img-3" src="data/img/img-3.png">
+      <img class="img-4" src="data/img/img-4.png">
+      <img class="img-5" src="data/img/img-5.png">
+      <div id="text-1" class="text-item">
+        <div>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div id="text-2" class="text-item">
+        <div>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div id="text-3" class="text-item">
+        <div>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div id="text-4" class="text-item">
+        <div>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div id="text-5" class="text-item">
+        <div>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div id="text-6" class="text-item">
+        <div>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div id="text-7">资源数据</div>
+    </div>
+  </div>
+  <!--    中间部分  end-->
+  <!--    右边部分  start-->
+  <div class="cont-right">
+    <!--        边角 左-->
+    <div class="border-style-left"></div>
+    <!--        边角 右-->
+    <div class="border-style-right"></div>
+    <!--        标题-->
+    <div class="cont-title-r"></div>
+    <div class="cont-r">
+      <div class="c-r-t">单位政策</div>
+      <div class="c-r-list">
+        <div class="zc">
+          <img src="data/img/tyzyk-zc.png">
+          <span class="text-1">政策发文</span>
+          <span class="text-2" id="dwzc">---</span>
+        </div>
+        <div class="hxtk">
+          <img src="data/img/tyzyk-hxtk.png">
+          <span class="text-1">核心条款</span>
+          <span class="text-2" id="dwtk">---</span>
+        </div>
+        <div class="tjzs">
+          <img src="data/img/tyzyk-tjzs.png">
+          <span class="text-1">图解总数</span>
+          <span class="text-2" id="dwtj">---</span>
+        </div>
+      </div>
+    </div>
+    <div class="cont-r">
+      <div class="c-r-t">行业政策</div>
+      <div class="c-r-list">
+        <div class="zc">
+          <img src="data/img/tyzyk-zc.png">
+          <span class="text-1">政策发文</span>
+          <span class="text-2" id="hyzc">---</span>
+        </div>
+        <div class="hxtk">
+          <img src="data/img/tyzyk-hxtk.png">
+          <span class="text-1">核心条款</span>
+          <span class="text-2" id="hytk">---</span>
+        </div>
+        <div class="tjzs">
+          <img src="data/img/tyzyk-tjzs.png">
+          <span class="text-1">图解总数</span>
+          <span class="text-2" id="hytj">---</span>
+        </div>
+      </div>
+    </div>
+    <div class="cont-r">
+      <div class="c-r-t">创业单位政策</div>
+      <div class="c-r-list">
+        <div class="zc">
+          <img src="data/img/tyzyk-zc.png">
+          <span class="text-1">政策发文</span>
+          <span class="text-2" id="lhzc">---</span>
+        </div>
+        <div class="hxtk">
+          <img src="data/img/tyzyk-hxtk.png">
+          <span class="text-1">核心条款</span>
+          <span class="text-2" id="lhtk">---</span>
+        </div>
+        <div class="tjzs">
+          <img src="data/img/tyzyk-tjzs.png">
+          <span class="text-1">图解总数</span>
+          <span class="text-2" id="lhtj">---</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--    右边部分  end-->
+</div>
+<!--  内容-统一资源库 end-->
+</div>
+<script src="data/js/jquery-3.3.1.min.js"></script>
+<script src="data/js/layer.js"></script>
+<script src="data/js/echarts.min.js"></script>
+<script src="data/js/rollSlide.js"></script>
+<script src="data/js/util.js"></script>
+<script src="data/js/getData.js"></script>
+<script src="data/js/common.js"></script>
+<script src="data/js/tyzyk.js"></script>
+<script>
+$ (function () {
+  //数据源列表查询
+  getUirbList ();
+  //区县接入排行榜
+  getUirbRank ();
+  //主题库列表
+  getThemeList ();
+  //政策直通车数据统计
+  getPolicyData ();
+  setInterval (res => {
+    window.location.reload ();
+  }, 1 * 60 * 60 * 1000);
+});
+
+</script>
+</body>
+</html>

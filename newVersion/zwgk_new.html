@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>重庆市政府网站集约化平台-工作首页</title>
+  <link rel="stylesheet" href="data/css/common.css">
+  <link rel="stylesheet" href="data/css/animate.css">
+  <link rel="stylesheet" href="data/css/zwgk_new.css">
+</head>
+<body>
+<div class="main">
+  <!--  公共部分-->
+  <div class="common">
+    <div class="header">
+      <!--  时间-->
+      <div class="time">
+        <img src="data/img/index-t-l.png">
+        <span id="time">00:00:00</span>|&nbsp;&nbsp;&nbsp;&nbsp;<span id="date">0000-00-00</span>
+        <span id="week">---</span>
+      </div>
+      <!--  标题-->
+      <div class="title">
+        <img class="title-img" src="data/img/index-t-t.png">
+        重庆市政府网站集约化平台—数据监测云平台
+        <div class="head-circle-1">
+          <img class="head-c-out" src="data/img/index-t-c-1-o.png">
+          <img class="head-c-inside" src="data/img/index-t-c-1-i.png">
+        </div>
+      </div>
+      <!--  天气-->
+      <div class="weather">
+        <img class="wea-img" src="data/img/index-t-r.png">
+        <span id="wea">----</span>
+        <span id="tem">--°C</span>
+        <div class="head-circle-2">
+          <img class="head-c-out" src="data/img/index-t-c-2-o.png">
+          <img class="head-c-inside" src="data/img/index-t-c-2-i.png">
+        </div>
+      </div>
+      <img class="head-l" src="data/img/index-t-l-1.png">
+      <img class="head-r" src="data/img/index-t-r-1.png">
+    </div>
+    <div class="nav">
+      <a href="index_new.html">集约化平台</a>
+      <a href="tyzyk_new.html">统一资源库</a>
+      <a class="nav-active" href="zwgk_new.html">政府信息公开</a>
+    </div>
+  </div>
+  <!--  内容-工作首页 start-->
+  <div class="cont">
+    <!--    左边部分  start-->
+    <div class="cont-left">
+      <!--    左上部分-->
+      <div class="cont-left-top">
+        <!--        标题-->
+        <div class="cont-title">
+          行政规范性文件发文总数
+          <span id="xzgfzl"></span>
+        </div>
+        <div class="cont-bac cont-l-t">
+          <!--        行政规范文件图表-->
+          <div id="echart-l-t"></div>
+          <!--<div class="l-t-line l-t-line-1">
+            <span class="l-t-name">市政府</span>
+            <span class="l-t-val" id="xzgf_szf"></span>
+          </div>
+          <div class="l-t-line l-t-line-2">
+            <span class="l-t-name">市政府办公厅</span>
+            <span class="l-t-val" id="xzgf_szfb"></span>
+          </div>-->
+          <div class="l-t-line l-t-line-2">
+            <span class="l-t-name">市政府及<br/>市政府办公厅</span>
+            <span class="l-t-val" id="xzgf_szfb"></span>
+          </div>
+          <div class="l-t-line l-t-line-3">
+            <span class="l-t-name">市政府部门</span>
+            <span class="l-t-val" id="xzgf_szfbm"></span>
+          </div>
+          <div class="l-t-line l-t-line-4">
+            <span class="l-t-name">区县政府</span>
+            <span class="l-t-val" id="xzgf_qxzf"></span>
+          </div>
+        </div>
+      </div>
+      <!--    左下部分-->
+      <div class="cont-left-bottom">
+        <!--        标题-->
+        <div class="cont-title">行政规范性文件发文走势</div>
+        <!--        站点发稿量走势图表-->
+        <div class="cont-bac" id="echart-l-b"></div>
+        <div class="echart-1-btn">
+          <span class="btn-active" onclick="changeSort(this)">周</span>
+          <span onclick="changeSort(this)">月</span>
+          <!--<span onclick="changeSort(this)">年</span>-->
+        </div>
+      </div>
+    </div>
+    <!--    中间部分  start-->
+    <div class="cont-middle">
+      <!--    中上部分-->
+      <div class="cont-middle-top">
+        <div class="cont-bac cont-m-t">
+          <div class="m-t-t">
+            <span>政府信息公开总发稿量</span>
+            <span id="zwgkzl">---</span>
+          </div>
+          <div class="cont-m-b">
+            <div id="echart-m-t-1"></div>
+            <div class="text-m-t">重庆市人民政府</div>
+          </div>
+          <div class="cont-m-b">
+            <div id="echart-m-t-2"></div>
+            <div class="text-m-t">市政府部门</div>
+          </div>
+          <div class="cont-m-b">
+            <div id="echart-m-t-3"></div>
+            <div class="text-m-t">区县政府</div>
+          </div>
+        </div>
+      </div>
+      <!--    中下部分-->
+      <div class="cont-middle-bottom">
+        <div class="m-b-t">
+          <div><img src="data/img/zwgk-bwbj.png">市政府部门</div>
+          <div><img src="data/img/zwgk-qxzf.png">区县政府</div>
+        </div>
+        <div class="m-b-b">
+          <div class="sphere">
+            <img class="sphere-bg" src="data/img/53earth.png"/>
+            <div class="sum">
+              <span>政府信息公开数据动态</span>
+<!--              <p id="zwgkzl">568971401</p>-->
+            </div>
+            <!--<div class="cont-szf">
+              <div id="zwgkzl_szf">12549623</div>
+              <div>市政府</div>
+            </div>-->
+          </div>
+          <div class="cicle3"></div>
+          <div class="cicle4"></div>
+          <div class="cicle5"></div>
+          <div class="cicle6"></div>
+          <div class="cicle7"></div>
+          <div class="roate-item">
+            <span>---</span>
+            <p>市政府</p>
+          </div>
+          <div class="roate-item">
+            <span>---</span>
+            <p>市政府办公厅</p>
+          </div>
+          <div class="roate-item">
+            <span>---</span>
+            <p>南岸区</p>
+          </div>
+          <div class="roate-item">
+            <span>---</span>
+            <p>渝中区</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--    右边部分  start-->
+    <div class="cont-right">
+      <div class="cont-right-top">
+        <!--        标题-->
+        <div class="cont-title">
+          政策解读
+          <span id="zcjd"></span>
+        </div>
+        <div class="cont-bac" id="echart-r-t"></div>
+        <div class="label-rank">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>6</span>
+          <span>7</span>
+          <span>8</span>
+        </div>
+      </div>
+      <div class="cont-right-bottom">
+        <!--        标题-->
+        <div class="cont-title">
+          主题分类
+          <span id="ztfl"></span>
+        </div>
+        <div class="cont-bac r-b-b">
+          <div class="r-b-t">
+            <span>分类名称</span>
+            <span>发文数</span>
+          </div>
+          <div class="r-b-list"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <canvas class="rain"></canvas>
+  </div>
+</div>
+<script src="data/js/jquery-3.3.1.min.js"></script>
+<script src="data/js/layer.js"></script>
+<script src="data/js/echarts.min.js"></script>
+<script src="data/js/util.js"></script>
+<script src="data/js/getData.js"></script>
+<script src="data/js/common.js"></script>
+<script src="data/js/markArray.js"></script>
+<script src="data/js/requestData.js"></script>
+<script src="data/js/zwgk_new.js"></script>
+<script src="data/js/requestApi.js"></script>
+</body>
+</html>

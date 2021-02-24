@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>重庆市政府网站集约化平台-工作首页</title>
+  <link rel="stylesheet" href="data/css/common.css">
+  <link rel="stylesheet" href="data/css/animate.min.css">
+  <link rel="stylesheet" href="data/css/index.css">
+</head>
+<body>
+<div class="main">
+  <!--  公共部分-->
+  <div class="common">
+    <div class="header">
+      重庆市政府网站集约化平台—数据监测云平台
+    </div>
+    <!--  天气-->
+    <div class="aside-weather">
+      <span id="time">00:00:00</span>|&nbsp;&nbsp;<span id="date">0000-00-00</span>
+      <span id="week">---</span>
+      <span id="wea">----</span>
+      <span id="tem">--°C</span>
+    </div>
+    <!--  用户信息-->
+    <!--<div class="aside-user">
+      <img src="data/img/main-user.png">
+      用户<span id="user">Mr.Hu</span>
+    </div>-->
+    <div class="nav">
+      <a class="nav-active" href="index.html"><img src="data/img/common-gzsy.png"></a>
+<!--      <a href="ptrz.html">平台入驻</a>-->
+      <a href="tyzyk.html">统一资源库</a>
+    </div>
+  </div>
+  <!--  内容-工作首页 start-->
+  <div class="cont">
+    <!--    左边部分  start-->
+    <div class="cont-left">
+      <!--    左上部分-->
+      <div class="cont-left-top">
+        <!--        边角 左-->
+        <div class="border-style-left"></div>
+        <!--        边角 右-->
+        <div class="border-style-right"></div>
+        <!--        标题-->
+        <div class="cont-title-l-t"></div>
+        <!--        资源库数据总览图表-->
+        <div id="echart-l-t"></div>
+        <!--        白底-->
+        <div class="white-box"></div>
+      </div>
+      <!--    左下部分-->
+      <div class="cont-left-bottom">
+        <!--        边角 左-->
+        <div class="border-style-left"></div>
+        <!--        边角 右-->
+        <div class="border-style-right"></div>
+        <!--        标题-->
+        <div class="cont-title-l-b"></div>
+        <!--        数据入库走势图表-->
+        <div id="echart-l-b"></div>
+        <div class="aside-select" onclick="selectView()">
+          <div>近一周</div><img src="data/img/index-select.png">
+        </div>
+        <div class="select-option">
+          <div onclick="selectOption(this)">近一周</div>
+          <div onclick="selectOption(this)">近一月</div>
+          <div onclick="selectOption(this)">近一年</div>
+        </div>
+      </div>
+    </div>
+    <!--    左边部分  end-->
+    <!--    中间部分  start-->
+    <div class="cont-middle">
+      <!--    中上部分-->
+      <div class="cont-middle-top">
+        <div class="m-item">
+          <div class="m-item-t">
+            <div id="wzrzzl" class="m-item-t-1">---</div>
+            <div class="m-item-t-2">站点总量</div>
+          </div>
+        </div>
+        <div class="m-item">
+          <div class="m-item-t">
+            <div id="zyzl" class="m-item-t-1">---</div>
+            <div class="m-item-t-2">资源总量</div>
+          </div>
+        </div>
+        <div class="m-item">
+          <div class="m-item-t">
+            <div id="ptfgrzzl" class="m-item-t-1">---</div>
+            <div class="m-item-t-2">平台发稿量</div>
+          </div>
+        </div>
+        <div class="m-item">
+          <div class="m-item-t">
+            <div id="zcsl" class="m-item-t-1">---</div>
+            <div class="m-item-t-2">政策数量</div>
+          </div>
+        </div>
+      </div>
+      <div class="ptfgzl"><img src="data/img/index-ptfwzl.png"> <span id="ptfgzl">---</span></div>
+      <!--    中下部分-->
+      <div class="cont-middle-bottom">
+        <div id="echart-m-b"></div>
+        <div class="aside-data">
+          <!--        边角 左-->
+          <div class="border-style-left"></div>
+          <!--        边角 右-->
+          <div class="border-style-right"></div>
+          <div class="m-title">北碚</div>
+          <div class="m-all-views">当日总访客数 <span>----</span></div>
+          <div class="m-days-views">当日总访问量 <span>--</span></div>
+        </div>
+      </div>
+    </div>
+    <!--    中间部分  end-->
+    <!--    右边部分  start-->
+    <div class="cont-right">
+      <!--    右上部分-->
+      <div class="cont-right-top">
+        <!--        边角 左-->
+        <div class="border-style-left"></div>
+        <!--        边角 右-->
+        <div class="border-style-right"></div>
+        <!--        标题-->
+        <div class="cont-title-r-t"></div>
+        <!--        区域访问量图表-->
+        <div id="echart-r-t"></div>
+      </div>
+      <!--    右下部分-->
+      <div class="cont-right-bottom">
+        <!--        边角 左-->
+        <div class="border-style-left"></div>
+        <!--        边角 右-->
+        <div class="border-style-right"></div>
+        <!--        标题-->
+        <div class="cont-title-r-b"></div>
+        <!--        站点发稿量排行表-->
+        <div id="echart-r-b"></div>
+        <div class="aside-check">
+          <span class="check-active" onclick="changeSort(this)">日</span>
+          <span onclick="changeSort(this)">周</span>
+          <span onclick="changeSort(this)">月</span>
+        </div>
+      </div>
+    </div>
+    <!--    右边部分  end-->
+  </div>
+  <!--  内容-工作首页 end-->
+</div>
+<script src="data/js/jquery-3.3.1.min.js"></script>
+<script src="data/js/layer.js"></script>
+<script src="data/js/echarts.min.js"></script>
+<script src="data/js/util.js"></script>
+<script src="data/js/getData.js"></script>
+<script src="data/js/chongqing.json" type="application/json"></script>
+<script src="data/js/markArray.js"></script>
+<script src="data/js/common.js"></script>
+<script src="data/js/index.js"></script>
+<script>
+$ (function () {
+  getAllData ();//获取所有数据
+  var date = new Date ();
+  var hour = date.getHours ();
+  var min = date.getMinutes();
+  var sec = date.getSeconds();
+  if (hour > 7 && hour < 21) {
+    //如果下一秒为整点 则刷新页面
+    setInterval (res => {
+      if( min == 0 && sec == 0) {
+        window.location.reload ();
+      }
+    }, 1000);
+    //一个小时重新请求一次数据
+    setInterval (res => {
+      window.location.reload ();
+    }, 1 * 60 * 60 * 1000);
+  }
+  function getAllData () {
+    localStorage.clear ();
+//获取网站入驻总量
+    getWZRZZZL ();
+//获取移动端入驻总量
+// getYDDRZZL();
+//获取新媒体入驻总量
+// getXMTRZZL();
+//获取平台发稿入驻总量
+    getPTFGRZZL ();
+//获取政策总量
+    getPolicyZL ();
+//获取平台访问总量
+    getVisitsZL ();
+//初始化资源库数据总览图表
+    getZYKData ();
+//初始化数据入库走势图表
+    getRKUirb ();
+//获取区域访问总量数据
+    indexSearHotChart ();
+//初始化地图图表
+    indexMap ();
+//初始化搜索热词图表
+    indexSearHotChart ();
+//初始化站点发稿量排行图表
+    indexSiteSort ();
+  }
+})
+
+</script>
+</body>
+</html>

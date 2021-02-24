@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: .2rem;
+    /*max-height: 1080px;*/
+    /*overflow: hidden;*/
+}
+
+@font-face {
+    font-family: 'LCdd';
+    src        : url('../fonts/LCdd.TTF');
+}
+
+.main {
+    position: relative;
+    /*width: 100%;*/
+    /*height: auto;*/
+    /*max-width: 1920px;*/
+    /*min-height: 1080px;*/
+    /*width: 100vw;*/
+    /*height: 100vh;*/
+    margin: 0 auto;
+    background: url("../img/main-bac-1.png") center/cover no-repeat;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: calc(100% - .3rem);
+    height: 1rem;
+    line-height: 1;
+    margin: 0 auto;
+    padding: .15rem;
+    color: #fff;
+}
+
+.header .title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 80%;
+    color: #02eeff;
+    font-size: .3rem;
+    font-weight: bold;
+    /*background: url("../img/index-t-t.png") center/cover no-repeat;*/
+}
+
+.header .time, .header .weather {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 80%;
+    color: #fff;
+    font-size: .2rem;
+}
+
+.header .time img {
+    position: absolute;
+    left: 8%;
+    top: .1rem;
+    width: 96%;
+    height: 100%;
+}
+.header .time span {
+    margin-right: .2rem;
+}
+
+.header .weather .wea-img {
+    position: absolute;
+    right: 10%;
+    top: .09rem;
+    width: 90%;
+    height: 90%;
+}
+.header .weather .head-circle-2 {
+    position: absolute;
+    left: -.36rem;
+    top: .4rem;
+    width: .6rem;
+    height: .6rem;
+    animation: transformBg 4s infinite linear;
+}
+.header .weather .head-circle-2 .head-c-out{
+    width: 100%;
+    animation: rotateFun 5s infinite ;
+}
+.header .weather .head-circle-2 .head-c-inside {
+    position: absolute;
+    left: .15rem;
+    top: .15rem;
+    width: .3rem;
+    height: .3rem;
+}
+
+.header .title .title-img {
+    position: absolute;
+    left: 1%;
+    top: 0;
+    width: 98%;
+    height: 100%;
+}
+.header .weather {
+    justify-content: flex-start;
+}
+.header .weather #wea {
+    margin-left: 1rem;
+    margin-right: .2rem;
+
+}
+.head-l {
+    position: absolute;
+    left: .1rem;
+    top: .1rem;
+    width: 1rem;
+}
+.head-r {
+    position: absolute;
+    right: .1rem;
+    top: .1rem;
+    width: 1rem;
+}
+.title .head-circle-1 {
+    position: absolute;
+    left: .23rem;
+    top: .3rem;
+    width: .6rem;
+    height: .6rem;
+    animation: transformBg 4s infinite linear;
+}
+.head-circle-1 .head-c-out {
+    width: 100%;
+}
+.head-circle-1 .head-c-inside {
+    position: absolute;
+    left: .15rem;
+    top: .15rem;
+    width: .3rem;
+    height: .3rem;
+}
+
+@keyframes transformBg {
+    from {
+      transform: rotatez(0);
+    }
+    to {
+      transform: rotatez(360deg);
+    }
+  }
+
+  @-moz-keyframes transformBg {
+    from {
+      transform: rotatez(0);
+    }
+    to {
+      transform: rotatez(360deg);
+    }
+  }
+
+  @-webkit-keyframes transformBg {
+    from {
+      transform: rotatez(0);
+    }
+    to {
+      transform: rotatez(360deg);
+    }
+  }
+
+  @-moz-keyframes transformBg {
+    from {
+      transform: rotatez(0);
+    }
+    to {
+      transform: rotatez(360deg);
+    }
+  }
+
+.nav {
+    width: 8rem;
+    height: .5rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    font-size: .24rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav a {
+    color: #fff;
+    width: 2.5rem;
+    height: .5rem;
+    line-height: .5rem;
+    text-align: center;
+}
+
+.nav a img {
+    padding-top: 3px;
+}
+
+.nav a:active {
+    color: #02eeff;
+}
+
+.nav a:link {
+    text-decoration: none;
+}
+
+.nav-active {
+    color: #02eeff !important;
+    background: url("../img/nav-active.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.cont {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: calc(100% - .2rem);
+    height: auto;
+    margin: .3rem auto 0;
+    padding: 0 .1rem;
+    z-index: 2;
+}
+
+.cont-left, .cont-right {
+    position: relative;
+    width: 25%;
+    height: auto;
+    top: -.6rem;
+}
+
+.cont-middle {
+    position: relative;
+    width: calc(50% - .5rem);
+    height: auto;
+    /*min-height: 855px;*/
+}
+.cont-title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: .5rem;
+    margin-bottom: .2rem;
+    padding-bottom: .1rem;
+    color: #fff;
+    font-size: .1875rem;
+    text-indent: .1rem;
+    font-weight: bold;
+    background: url('../img/main-cont-t.png') no-repeat;
+    background-size: 100% 50%;
+    background-position: 0 .25rem;
+}
+.cont-title span {
+    margin-left: .2rem;
+}
+.cont-bac {
+    background: url("../img/echart-bac.png") no-repeat;
+    background-size: 100% 100%;
+}
+.l-bottom-item {
+    font-weight: normal !important;
+}
+.echart-1-btn, .echart-2-btn {
+    position: absolute;
+    top: .8rem;
+    right: .1rem;
+    cursor: pointer;
+    z-index: 9;
+}
+.echart-1-btn span, .echart-2-btn span{
+    display: inline-block;
+    width: .5rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: .16rem;
+    cursor: pointer;
+}
+.btn-active {
+    color: #fff !important;
+    border-radius: .5rem;
+    background: #0998c1;
+}
+
+.no-data {
+    width: 100%;
+    color: #fff;
+    text-align: center
+}
+.rain {
+    position: absolute;
+    left: 15%;
+    top: 20%;
+    width: 70%;
+    height: 80%;
+    z-index: 0;
+}
+i {
+    display: inline-block;
+    width: .3125rem;
+    height: .4375rem;
+     margin-right: -.05rem;
+    /* margin-top: 15px; */
+    background: url(../img/0-9.png) 0 0 no-repeat;
+    background-size: 70%;
+}
+
+
+.three-step i{
+    display: inline-block;
+    width: 12px;
+    height: 24px;
+    background: #073162;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-left: .5px;
+  }
+
+  .three-step i b {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
