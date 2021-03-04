@@ -30,9 +30,9 @@ function IndexData () {
   getAdministrative();//行政规范发文走势图表
   getPolicyCount();//政策解读排行
   getZCJDZL();//获取政策解读总量
-  getGovOpenData();//圆球旋转动画
   getGovOpenDataCount('zwgk');//政务公开发稿数据及图表
   getThemeDataStat();//主题库列表数据
+  getGovOpenData();//圆球旋转动画
   rainBg();//淋雨效果
 
   // getZTFL();//获取主题分类
