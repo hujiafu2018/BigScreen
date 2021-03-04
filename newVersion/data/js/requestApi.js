@@ -275,6 +275,10 @@ function getGovOpenData () {
     window.clearInterval(_interValByRoate);
     window.clearTimeout(_setTimeByRoate);
     roateFun();//圆球旋转动画
+  }).catch( ()=> {
+    window.clearInterval(_interValByRoate);
+    window.clearTimeout(_setTimeByRoate);
+    roateFun();//圆球旋转动画
   })
 }
 //获取政策解读数据
@@ -293,6 +297,9 @@ function getPolicyCount () {
     resData.ZCJD_Data.seriesData = seriesData.slice (0, 8).reverse();
     getZCJDZL();//获取政策解读总量动画
     echarts_6();//政策解读排行图表
+  }).catch( ()=> {
+    getZCJDZL();//获取政策解读总量动画
+    echarts_6();//政策解读排行图表
   })
 }
 //获取主题分类数据
@@ -305,12 +312,17 @@ function getThemeDataStat () {
     resData.ZWGK_ZTK_All = rea_allData;
     getZTFL();//主题分类总数
     getThemeList();//渲染主题库列表数据
+  }).catch( ()=> {
+    getZTFL();//主题分类总数
+    getThemeList();//渲染主题库列表数据
   })
 }
 //获取安全运行天数
 function getSafeRun() {
   Api.getSafeRun().then(res => {
     resData.AQYX = res.data;
+    getSafeDay();//安全运行动画
+  }).catch( ()=> {
     getSafeDay();//安全运行动画
   })
 }
