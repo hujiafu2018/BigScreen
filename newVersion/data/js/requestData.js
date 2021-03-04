@@ -3,23 +3,23 @@ const resData = {
   clickIndex_pt: 0,//记录平台访问切换的下标
   clickIndex_zd: 0,//记录站点发稿切换的下标
   /****************政务公开数据 start*****************************/
-  XZGFZL_Data: '---',//行政规范总量
-  XZGF_SZF_Data: '---',//市政府行政规范文件数量
-  XZGF_SZFB_Data: '---',//市政府办公厅行政规范文件数量
-  XZGF_SZFBM_Data: '---',//市政府部门行政规范文件数量
-  XZGF_QXZF_Data: '---',//区县政府行政规范文件数量
+  XZGFZL_Data: '7164',//行政规范总量 '---'
+  XZGF_SZF_Data: '358',//市政府行政规范文件数量
+  XZGF_SZFB_Data: '510',//市政府办公厅行政规范文件数量
+  XZGF_SZFBM_Data: '1745',//市政府部门行政规范文件数量
+  XZGF_QXZF_Data: '4551',//区县政府行政规范文件数量
   ZTFL_Data: '---',//主题分类数据
   //政策解读数据
-  ZCJD_All: '---',
+  ZCJD_All: '10964', //'---'
   ZCJD_Data: {
-    yAxisData: [],
-    seriesData: []
+    yAxisData: ["市生态环境局", "永川区", "璧山区", "九龙坡区", "石柱县", "市财政局", "大足区", "铜梁区"],
+    seriesData: [267, 302, 314, 561, 562, 674, 1148, 3297]
   },
   // [{sitedesc:'渝中区',doccount: '51240000'},{sitedesc:'江北区',doccount: '50080000'},{sitedesc:'渝北区',doccount: '47528000'},{sitedesc:'南岸区',doccount: '40120000'},{sitedesc:'巴南区',doccount: '35210000'},{sitedesc:'涪陵区',doccount: '32140000'},{sitedesc:'万州区',doccount: '30210000'},{sitedesc:'万盛区',doccount: '21470000'}]
   // ZCZL_Data: 2563425, //政策总量数据
-  ZC_SZF_Data: '---', //市政府政策量数据
-  ZC_WBJ_Data: '---', //委办局政策量数据
-  ZC_QXZF_Data: '---', //区县政府政策量数据
+  ZC_SZF_Data: '393088', //市政府政策量数据
+  ZC_WBJ_Data: '207513', //委办局政策量数据
+  ZC_QXZF_Data: '842680', //区县政府政策量数据
   ZWGKZL_Data: '---', //政务公开总量政策量数据
   SZFZWGKZL_Data: '---', //委办局政策量数据
   ZWFW: {
