@@ -59,8 +59,19 @@ const resData = {
     {name: '江北区',value: '14652'},
   ],
   //主题库列表数据
-  ZWGK_ZTK_All: '---',
-  ZWGK_ZTK_List:'',
+  ZWGK_ZTK_All: '3195846',
+  ZWGK_ZTK_List:[
+      {update_time: 1574061843825, db_table_name: "govdocnews", update_user: "dev", create_time: 1574061843825, resource_group_id: 24},
+      {update_time: 1574061845153, db_table_name: "xxgk", update_user: "dev", create_time: 1574061845153, resource_group_id: 25},
+      {update_time: 1574061846322, db_table_name: "govmsgbox", update_user: "dev", create_time: 1574061846322, resource_group_id: 28},
+      {update_time: 1574061845898, db_table_name: "bssx", update_user: "dev", create_time: 1574061845898, resource_group_id: 27},
+      {update_time: 1574061844201, db_table_name: "gwydt", update_user: "dev", create_time: 1574061844201, resource_group_id: 24},
+      {update_time: 1574061844617, db_table_name: "jyta", update_user: "dev", create_time: 1574061844617, resource_group_id: 25},
+      {update_time: 1575822218188, db_table_name: "gov_years", update_user: "dev", create_time: 1575822218188, resource_group_id: 25},
+      {update_time: 1576551041897, db_table_name: "opinion", update_user: "dev", create_time: 1576551041897, resource_group_id: 28},
+      {update_time: 1576565483717, db_table_name: "pub_apply", update_user: "dev", create_time: 1576565483717, resource_group_id: 28},
+      {update_time: 1579335659449, db_table_name: "gbzcfg", update_user: "杨贝", create_time: 1574061845491, resource_group_id: 26}
+      ],
   /****************政务公开数据 end*****************************/
 
   /****************首页数据数据 end*****************************/
