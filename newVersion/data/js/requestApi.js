@@ -4,6 +4,8 @@ function getGJNums () {
     let data = JSON.parse(res.data);
     resData.PTFGZL = data.datas.totaldoccount;
     getPTFGZL();//获取稿件总数动画
+  }).catch(() => {
+    getPTFGZL();//获取稿件总数动画
   })
 }
 //获取政务公开发稿数
@@ -21,6 +23,16 @@ function getGovOpenDataCount (type = 'index') {
         resData.ZC_WBJ_Data = res_data[key]
       }
     }
+    if (type == 'index') {
+      getZWFGZL();//获取政务公开发稿数动画
+    } else {
+      //政务公开页面
+      getZWZL();//获取政务公开发稿数动画
+      echarts_3();//市政府政策解读比例
+      echarts_4();//委办局政策解读比例
+      echarts_5();//区县政府政策解读比例
+    }
+  }).catch(() => {
     if (type == 'index') {
       getZWFGZL();//获取政务公开发稿数动画
     } else {
